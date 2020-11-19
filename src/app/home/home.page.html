@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Mapping Solutions
+    </ion-title>
+  </ion-toolbar>
+ 
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-list>
+      <ion-item>
+        <ion-input (click)="showAddressModal()" [(ngModel)]="address.place"type="text" placeholder="Pick an address">              </ion-input>
+      </ion-item>
+    </ion-list>
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+    <div id='map' style='width: 400px; height: 300px;'></div>
+
+</ion-content>
